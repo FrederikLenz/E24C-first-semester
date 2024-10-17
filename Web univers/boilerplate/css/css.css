@@ -1,0 +1,203 @@
+/**
+ * file: css/css.css
+ * purpose: styling
+ **/
+
+ /* Styling af body overordnet*/
+body {
+  font-family: "Tenor Sans", sans-serif;
+  font-style: #f7ecc9;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  min-height: 100vh;
+  background-color: #fefee3;
+}
+/* Styling af mit logo */
+.header-logo {
+  display: flex;
+  justify-content: center;
+}
+/* Generelt styling af header og menupunkter */
+header {
+  position: absolute;
+  top: 1;
+  left: 0;
+  right: 0;
+  background: #223d4c;
+  box-shadow: 0 5px 10px #f7ecc9;
+  padding: 10px 7%;
+  margin-top: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  text-transform: uppercase;
+}
+
+header .navbar ul{
+  list-style: none;
+}
+
+header .navbar ul li {
+  position: relative;
+  float: left;
+  margin-right: 151px;
+}
+
+header .navbar ul li:last-child {
+  margin-right: 0;
+}
+
+header .navbar ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px;
+  margin-top: -15px;
+  color: #f7ecc9;
+  display: block;
+}
+
+header .navbar ul li a:hover {
+  background: #751012;
+  color: #f7ecc9;
+}
+
+#menu-bar {
+  display: none;
+}
+
+/* Styling af forside billede */
+#forside-billede {
+margin-top: 75px;
+padding-left: 1.5%;
+}
+
+/*Forside formular*/
+form {
+background-color: #f7ecc9;
+padding-left: 1%;
+margin-right: 61%;
+margin-left: 1.5%;
+}
+
+h3 {
+  color: #223d4c;
+}
+
+label {
+  color: #223d4c;
+}
+
+#knap {
+  background-color: #751012;
+  color: #f7ecc9;
+}
+
+/*Opskrifter styling*/
+.opskrift-billeder {
+  margin-left: 1.5%;
+  margin-top: 75px;
+  margin-right: 1.5%;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  color: #223d4c;
+}
+
+.opskrift-midten,
+.opskrift-venstre,
+.opskrift-højre {
+ width: 30%;
+}
+
+/*Madspild styling*/
+.madspild-billeder {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 75px;
+}
+
+.madspild-art {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  padding: 5%;
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-top: 2%;
+  background-color: #f7ecc9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.madspild-art:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.madspild-art img {
+  max-width: 45%;
+}
+
+.vert {
+  max-width: 60%;
+  color: #223d4c;
+}
+
+.vert p {
+  margin: 0 0 10px;
+  line-height: 1.6;
+}
+
+/*Strategi styling*/
+.strategi-indledning {
+  color: #223d4c;
+  margin: 75px;
+  margin-left: 25%;
+  margin-right: 25%;
+  text-align: center;
+}
+
+.blå-linje {
+  border: none;
+  border-top: 1px solid #223d4c;
+  width: 97.5%;
+  margin: 20px auto;
+  margin-top: -50px;
+}
+
+.strategi-billeder {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.strategi-art {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 1.5%;
+  margin-right: 15%;
+  margin-top: 1px
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.strategi-art img {
+  max-width: 30%;
+}
+
+.vert {
+  max-width: 65%;
+  color: #223d4c;
+  margin-top: -20px;
+}
+
+.vert p {
+  margin: 0 0 10px;
+  line-height: 1.6;
+}
